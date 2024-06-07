@@ -1,0 +1,139 @@
+@import "../../global";
+
+.navbar {
+  width: 100%;
+  background: $lightPink;
+  padding: 0px 4rem;
+  @media screen and (max-width:600px) {
+    padding: 0px 1rem;
+  }
+
+  .inside-navbar-div {
+    max-width: 1300px;
+    margin: auto;
+    @include flex-x-center;
+    justify-content: space-between;
+    height: 86px;
+
+    .logo {
+      @media screen and (max-width: 750px) {
+        width: 130px;
+        height: auto;
+      }
+    }
+
+    .right-navbar {
+      @include flex-x-center;
+      gap: 23px;
+
+      .uk-flag {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .person-container {
+        position: relative;
+        @media screen and (max-width: 750px) {
+          display: none;
+        }
+
+        &:hover .login-box {
+          display: flex;
+        }
+
+        .person-icon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .down-icon {
+          font-size: 13px;
+          cursor: pointer;
+        }
+
+        .login-box {
+          position: absolute;
+          top: 29px;
+          left: -50px;
+          width: 170px;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          padding: 15px;
+          font-size: 14px;
+          color: #2a3845;
+          @include flex;
+          flex-direction: column;
+          gap: 8px;
+          display: none;
+
+          .login-box-text {
+            cursor: pointer;
+            text-decoration: none;
+            color: #2a3845;
+          }
+        }
+      }
+
+      .shopping {
+        position: relative;
+        cursor: pointer;
+
+        .shopping-icon {
+          font-size: 20px;
+        }
+
+        .cart-items {
+          position: absolute;
+          right: -3px;
+          top: -8px;
+          font-size: 11px;
+          background: $orangeColor;
+          color: #fff;
+          padding: 1px 3px;
+          border-radius: 50%;
+        }
+      }
+
+      .hamburger-menu {
+        display: none;
+        @media screen and (max-width:750px) {
+          display: block;
+        }
+        .menu-icon {
+          font-size: 26px;
+          position: absolute;
+          top: 28px;
+          right: 18px;
+          cursor: pointer;
+          @media screen and (max-width:600px) {
+            position: unset;
+          }
+        }
+      }
+
+      .phone-login-box {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 76px;
+        background: #fff;
+        z-index: 10;
+        @include flex;
+        flex-direction: column;
+        gap: 14px;
+        padding:28px 20px ;
+        font-size: 14px;
+        font-weight: 600;
+
+        .phone-login-text {
+          cursor: pointer;
+          text-decoration: none;
+          color: #2a3845;
+        }
+      }
+    }
+  }
+}

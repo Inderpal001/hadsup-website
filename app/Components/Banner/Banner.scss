@@ -1,0 +1,193 @@
+@import "../../global";
+
+.banner {
+  height: 335px;
+  width: 100%;
+  background: url("../../assests/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+  user-select: none;
+  @media screen and (max-width: 950px) {
+    height: 60vh;
+  }
+
+  @media screen and (max-width: 750px) {
+    height: 70vh;
+  }
+  @media screen and (max-width: 600px) {
+    height: 65vh;
+  }
+
+  .banner-content {
+    max-width: 1440px;
+    margin: auto;
+    @include flex-center;
+    flex-direction: column;
+
+    .banner-heading {
+      font-size: 54px;
+      background: -webkit-linear-gradient(
+        60deg,
+        $darkPink 20%,
+        $orangeColor 80%
+      );
+      background-clip: text;
+      color: transparent;
+      margin-top: 90px;
+      margin-bottom: 24px;
+      @media screen and (max-width: 750px) {
+        font-size: 34px;
+      }
+      @media screen and (max-width: 600px) {
+        margin-bottom: 14px;
+        margin-top: 70px;
+        font-size: 30px;
+      }
+    }
+
+    .banner-small-heading {
+      font-size: 20px;
+      color: $lightGreyColor;
+      font-weight: 400;
+      margin-bottom: 45px;
+      @media screen and (max-width: 750px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 600px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .banner-input-box-div {
+      background-image: linear-gradient(#3d445b, #2a2d47);
+      width: 90%;
+      max-width: 904px;
+      border-radius: 8px;
+      padding: 25px 20px;
+      color: #fff;
+
+      .banner-input-text {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .up-row {
+        @include flex-x-center;
+        @media screen and (max-width: 950px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .banner-input-box {
+          flex: 1;
+          position: relative;
+          @media screen and (max-width: 950px) {
+            width: 100%;
+          }
+
+          .banner-input {
+            width: 100%;
+            padding: 17px 13px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 0.5px solid;
+            outline: none;
+            @media screen and (max-width: 950px) {
+              border-radius: 8px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 14px;
+            }
+
+            &::placeholder {
+              font-weight: 500;
+              color: $lightGreyColor;
+            }
+
+            &:focus {
+              ~ .place-suggestions {
+                display: block;
+                z-index: 1;
+              }
+            }
+          }
+
+          .border-left-radius {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+
+          .border-right-radius {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            &:focus {
+              ~ .calendar-div {
+                display: block;
+              }
+            }
+          }
+
+          .place-suggestions {
+            background: #fff;
+            display: none;
+            width: 100%;
+            color: #2a2d47;
+            padding: 15px;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            top: 86px;
+
+            .place-heading {
+              font-weight: 700;
+              font-size: 17px;
+              line-height: 24px;
+              margin-bottom: 4px;
+            }
+
+            .places-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 8px;
+
+              @media screen and (max-width:600px) {
+                grid-template-columns: 1fr;
+              }
+            }
+          }
+
+          .calendar-div {
+            position: absolute;
+            left: 40px;
+            top: 86px;
+            display: none;
+            z-index: 1;
+            @media screen and (max-width:600px) {
+              left: 0px;
+            }
+          }
+        }
+      }
+
+      .down-row {
+        @include flex-x-center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .banner-search-btn {
+          padding: 15px 32px;
+          border-radius: 52px;
+          background: $orangeColor;
+          color: #fff;
+          border: none;
+          outline: none;
+          font-weight: 600;
+          font-size: 15px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

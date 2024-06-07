@@ -1,0 +1,17 @@
+@import "../../global";
+
+.places-name {
+    @include flex-x-center;
+    background: #fff;
+    border-radius: 5px;
+
+    &:hover {
+        background: #fff0f1;
+    }
+
+    .places {
+        font-size: 14px;
+        color: #2a3845;
+        margin-left: 8px;
+    }
+}
