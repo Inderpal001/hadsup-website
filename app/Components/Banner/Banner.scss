@@ -26,6 +26,8 @@
 
     .banner-heading {
       font-size: 54px;
+      font-family: "Gillroy", sans-serif;
+      font-weight: 700;
       background: -webkit-linear-gradient(
         60deg,
         $darkPink 20%,
@@ -121,11 +123,11 @@
             border-top-right-radius: 8px;
             border-bottom-right-radius: 8px;
 
-            &:focus {
-              ~ .calendar-div {
-                display: block;
-              }
-            }
+            // &:focus {
+            //   ~ .calendar-div {
+            //     display: block;
+            //   }
+            // }
           }
 
           .place-suggestions {
@@ -162,7 +164,7 @@
             position: absolute;
             left: 40px;
             top: 86px;
-            display: none;
+            // display: none;
             z-index: 1;
             @media screen and (max-width:600px) {
               left: 0px;
