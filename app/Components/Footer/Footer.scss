@@ -1,0 +1,146 @@
+@import "../../global";
+
+.footer-container {
+    width: 100%;
+    padding: 30px 0;
+
+    .footer-inner-container {
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+        @media screen and (max-width:1000px) {
+            width: 80%;
+        }
+
+        .upper-footer {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding-bottom: 25px;
+            position: relative;
+            @media screen and (max-width:1200px) {
+                grid-template-columns: repeat(2,1fr);
+            }
+            @media screen and (max-width:1000px) {
+                grid-template-columns: repeat(1,1fr);
+            }
+
+            .heads-up-footer-logo {
+                @media screen and (max-width:1000px) {
+                    width: 74px;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .center-columns {
+               @include flex;
+               justify-content: space-between;
+                width: 670px;
+                margin-right: 60px;
+                @media screen and (max-width:1100px) {
+                    width: 560px;
+                }
+                @media screen and (max-width:1000px) {
+                    width: 100%;
+                    margin-right: 0px;
+                    flex-wrap: wrap;
+                }
+                @media screen and (max-width:600px) {
+                    width: 90%;
+                }
+            }
+
+            .upper-columns {
+                @include flex;
+                flex-direction: column;
+                gap: 17px;
+
+                .footer-app-img-div {
+                    @media screen and (max-width:1200px) {
+                        @include flex;
+                        gap: 10px;
+                    }
+                    @media screen and (max-width:1200px) {
+                       flex-direction: column;
+                    }
+                }
+            }
+
+            .upper-footer-heading {
+                font-size: 17px;
+                line-height: 24px;
+                color: #2a3845;
+                font-weight: 500;
+                list-style: none;
+            }
+
+            .upper-footer-list {
+                font-size: 14px;
+                font-weight: 500;
+                list-style: none;
+
+                .upper-footer-links {
+                    text-decoration: none;
+                    color: $lightGreyColor;
+                }
+            }
+
+            .upper-footer-fifth-column {
+                @media screen and (max-width:500px) {
+                    position: absolute;
+                    right: -23px;
+                    top: 61%;
+                }
+
+                .footer-app-img {
+                    @media screen and (max-width:500px) {
+                        width: 130px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .lower-footer {
+            padding: 25px 0 20px;
+            @include flex-x-center;
+            justify-content: space-between;
+            @media screen and (max-width:1200px) {
+                flex-direction: column;
+                align-items: baseline;
+                gap: 15px;
+            }
+
+            .copyright-text {
+                color: $lightGreyColor;
+                font-size: 14px;
+            }
+
+            .lower-footer-details {
+                @include flex-x-center;
+                gap: 25px;
+
+                .copyright-details {
+                    text-decoration: none;
+                    font-weight: 700;
+                   font-size: 14px ;
+                   color: #84929f;
+                }
+
+                .social-links {
+                    color: #485663;
+                    font-size: 20px;
+                }
+            }
+
+            .copyright {
+                @media screen and (max-width:767px){
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: normal;
+                }
+            }
+        }
+    }
+}

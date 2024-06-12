@@ -1,0 +1,39 @@
+@import "../../../global";
+
+.card {
+  max-width: 335px;
+
+  .card-img {
+    width: 335px;
+    height: 370px;
+    object-fit: cover;
+  }
+
+  .card-heading {
+    margin-top: 40px;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    color: #2a3845;
+    font-family: "Gilroy",sans-serif;
+    @media screen and (max-width:1150px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width:767px) {
+      font-size: 20px;
+        line-height: 27px;
+    }
+  }
+
+  .card-para {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: #84929f;
+    @media screen and (max-width:767px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}

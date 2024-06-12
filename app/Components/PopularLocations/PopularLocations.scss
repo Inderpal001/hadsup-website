@@ -1,0 +1,152 @@
+@import "../../global";
+
+.popular-container {
+  max-width: 1300px;
+  width: 80%;
+  margin: auto;
+  @include flex-x-center;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  @media screen and (max-width:1200px) {
+    width: 90%;
+  }
+  @media screen and (max-width:1050px) {
+    flex-direction: column;
+    gap: 100px;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width:750px) {
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+
+  .left-popular-locations {
+    width: 55%;
+    @media screen and (max-width:1050px) {
+      width: 80%;
+    }
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+
+    .left-popular-locations-heading {
+      font-family: "Gilroy", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 48px;
+      letter-spacing: -0.005em;
+      @media screen and (max-width:1050px) {
+        font-size: 37px;
+      }
+      @media screen and (max-width:750px) {
+        font-size: 27px;
+        line-height: normal;
+      }
+
+      .heading-uk {
+        color: $orangeColor;
+      }
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 50px;
+    }
+  }
+
+  .right-popular-locations {
+    width: 45%;
+    @media screen and (max-width:1050px) {
+      width: 80%;
+    }
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+
+    .london-img {
+      @media screen and (max-width:1250px) {
+        width: 80%;
+        height: 80%;
+      }
+      @media screen and (max-width:1050px) {
+        width: 400px;
+      }
+      @media screen and (max-width:750px) {
+        width: 300px;
+        display: block;
+        margin: auto;
+      }
+      @media screen and (max-width:600px) {
+        width: 260px;
+      }
+    }
+
+    .map-down-info {
+      @include flex-x-center;
+      justify-content: space-between;
+      margin-top: 50px;
+      @media screen and (max-width:1050px) {
+        justify-content: space-evenly;
+      }
+      @media screen and (max-width:750px) {
+        justify-content: space-between;
+        margin-top: 25px;
+      }
+
+      .map-down-row {
+        @include flex-x-center;
+        flex: 1;
+        @media screen and (max-width:1050px) {
+         flex: none;
+        }
+        @media screen and (max-width:600px) {
+          flex: 1;
+         }
+
+        .map-info-svg-box {
+          position: relative;
+          margin-right: 15px;
+
+          .map-info-svg {
+            @media screen and (max-width:750px) {
+              width: 50px;
+            }
+          }
+        }
+
+        .map-uk-text {
+          position: absolute;
+          top: -3px;
+          right: -10px;
+          background: $orangeColor;
+          color: #ffff;
+          font-size: 8px;
+          padding: 2px 14px;
+          border-radius: 18px;
+          @media screen and (max-width:750px) {
+            top: 4px;
+            right: -14px;
+          }
+        }
+
+        .map-down-info-heading {
+          font-size: 24px;
+          font-weight: 800;
+          margin-bottom: 8px;
+          @media screen and (max-width:750px) {
+            font-size: 14px;
+          }
+        }
+
+        .map-down-info-para {
+          font-size: 12px;
+          color: $lightGreyColor;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

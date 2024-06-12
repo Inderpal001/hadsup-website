@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import "./Banner.scss";
 import Places from "../Places/Places";
 import MiuiCalendar from "../MiuiCalendar/MiuiCalendar";
-
+import LowerBanner from "./LowerBanner/LowerBanner";
 
 export default function Banner() {
 
@@ -57,8 +57,11 @@ export default function Banner() {
               <button disabled className="banner-search-btn">Search</button>
             </div>
           </div>
+
         </div>
       </div>
+
+      <LowerBanner/>
     </>
   );
 }

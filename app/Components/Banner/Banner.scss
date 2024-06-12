@@ -8,14 +8,13 @@
   background-position: center;
   user-select: none;
   @media screen and (max-width: 950px) {
-    height: 60vh;
-  }
-
-  @media screen and (max-width: 750px) {
-    height: 70vh;
+    height: 65vh;
   }
   @media screen and (max-width: 600px) {
-    height: 65vh;
+    height: 60vh;
+  }
+  @media screen and (max-width: 380px) {
+    height: 74vh;
   }
 
   .banner-content {
@@ -26,7 +25,7 @@
 
     .banner-heading {
       font-size: 54px;
-      font-family: "Gillroy", sans-serif;
+      font-family: "Gilroy", sans-serif;
       font-weight: 700;
       background: -webkit-linear-gradient(
         60deg,
@@ -191,5 +190,7 @@
         }
       }
     }
+
+    
   }
 }
