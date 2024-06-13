@@ -73,6 +73,10 @@
         font-weight: 700;
       }
 
+      .right-banner-input-text {
+        margin-bottom: 9px
+      }
+
       .up-row {
         @include flex-x-center;
 
@@ -123,11 +127,6 @@
             border-bottom-left-radius: 8px;
           }
 
-          .border-right-radius {
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-          }
-
           .place-suggestions {
             background: #fff;
             display: none;
@@ -155,17 +154,6 @@
               @media screen and (max-width:600px) {
                 grid-template-columns: 1fr;
               }
-            }
-          }
-
-          .calendar-div {
-            position: absolute;
-            left: 40px;
-            top: 86px;
-            z-index: 1;
-
-            @media screen and (max-width:600px) {
-              left: 0px;
             }
           }
         }

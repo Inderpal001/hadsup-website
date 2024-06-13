@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Banner.scss";
 import Places from "../Places/Places";
@@ -8,11 +8,6 @@ import MiuiCalendar from "../MiuiCalendar/MiuiCalendar";
 import LowerBanner from "./LowerBanner/LowerBanner";
 
 export default function Banner() {
-
-  const [showCalendar, setShowCalendar] = useState(false);
-  const toggleCalendar = () => {
-    setShowCalendar(!showCalendar);
-  }
 
   return (
     <>
@@ -42,13 +37,8 @@ export default function Banner() {
                 </div>
               </div>
               <div className="banner-input-box">
-                <p className="banner-input-text">My campaign will run...</p>
-                <input onFocus={toggleCalendar} type="text" className="banner-input right-banner-input border-right-radius" placeholder="Select compaign dates" />
-                {
-                  showCalendar && <div className="calendar-div">
-                    <MiuiCalendar />
-                  </div>
-                }
+                <p className="banner-input-text right-banner-input-text">My campaign will run...</p>
+                <MiuiCalendar/>
               </div>
             </div>
 

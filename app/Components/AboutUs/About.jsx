@@ -14,7 +14,7 @@ export default function About() {
           <button className="about-large-btn">How HeadsUp Work ?</button>
         </div>
         <div className="right-about">
-          <Image src={aboutImg} className="about-img" />
+          <Image src={aboutImg} className="about-img" alt="Laptop-Image"/>
         </div>
       </div>
     </div>

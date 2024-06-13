@@ -4,10 +4,11 @@
   width: 100%;
   background: linear-gradient(109.54deg, #485267 -11.65%, #22233f 99.07%);
   padding: 200px 0px;
-  height: 80vh;
+  @media screen and (max-width:1250px) {
+    padding: 150px 0px;
+  }
 
   @media screen and (max-width:1000px) {
-    height: auto;
     padding: 200px 0px 100px;
   }
 

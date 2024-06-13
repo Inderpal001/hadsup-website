@@ -33,11 +33,11 @@ export default function PopularLocations() {
             </div>
 
             <div className="right-popular-locations">
-                <Image src={LondonImg} className="london-img" />
+                <Image src={LondonImg} className="london-img" alt="London-Map"/>
                 <div className="map-down-info">
                     <div className="map-down-row">
                         <div className="map-info-svg-box">
-                            <Image src={locationMark} className="map-info-svg" />
+                            <Image src={locationMark} className="map-info-svg" alt="Location-mark"/>
                             <span className="map-uk-text">UK</span>
                         </div>
                         <div>
@@ -48,7 +48,7 @@ export default function PopularLocations() {
 
                     <div className="map-down-row">
                         <div className="map-info-svg-box">
-                            <Image src={eye} className="map-info-svg" />
+                            <Image src={eye} className="map-info-svg" alt="eye-image"/>
                             <span className="map-uk-text">UK</span>
                         </div>
                         <div>

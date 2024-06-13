@@ -1,22 +1,16 @@
 "use client";
 
-import * as React from "react";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
+import "./MiuiCalendar.scss";
+import * as React from 'react';
+import dayjs from 'dayjs';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 
-export default function BasicDateCalendar() {
-  const calendarStyle = {
-    backgroundColor: "#FDFDFD",
-    color: "#000",
-    borderRadius: "8px",
-    boxShadow: "0 0 2px 0 rgba(0, 0, 0, .2), 0 5px 10px 0 rgba(0, 0, 0, .1)",
-    maxWidth: "300px"
-  };
-
+export default function ResponsiveDatePickers() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DateCalendar style={calendarStyle} />
+          <MobileDatePicker className="calendar-input" defaultValue={dayjs('2022-04-17')} />    
     </LocalizationProvider>
   );
 }
