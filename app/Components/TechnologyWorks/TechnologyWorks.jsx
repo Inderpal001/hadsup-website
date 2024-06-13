@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./TechnologyWorks.scss";
-import Cards from './Cards/Cards';
+import Cards from "./Cards/Cards";
 import Card1Img from "@/app/assests/card1.jpg";
 import Card2Img from "@/app/assests/card2.webp";
 import Card3Img from "@/app/assests/card3.webp";
 
 export default function TechnologyWorks() {
   return (
-    <div className='technology-works-container'>
+    <div className="technology-works-container">
         <div className="inner-technology-works-container">
-            <h1 className='technology-works-heading'>How Does HadsUp-AI <br />
+            <h1 className="technology-works-heading">How Does HadsUp-AI <br />
             Technology Work?</h1>
 
             <div className="technology-row">

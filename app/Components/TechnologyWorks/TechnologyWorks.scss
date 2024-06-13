@@ -4,9 +4,11 @@
   width: 100%;
   padding-bottom: 48px;
   padding-top: 120px;
+
   @media screen and (max-width:1150px) {
     padding-top: 70px;
   }
+
   @media screen and (max-width:767px) {
     padding-top: 20px;
   }
@@ -22,11 +24,12 @@
       font-size: 48px;
       line-height: 56px;
       color: #2a3845;
-      font-family: "Gilroy",sans-serif;
+      font-family: "Gilroy", sans-serif;
 
       @media screen and (max-width:1150px) {
         font-size: 34px;
       }
+
       @media screen and (max-width:767px) {
         font-size: 24px;
         line-height: normal;
@@ -38,9 +41,10 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       gap: 35px;
+
       @media screen and (max-width:767px) {
         flex-direction: column;
-        align-items:center ;
+        align-items: center;
         gap: 60px;
       }
     }

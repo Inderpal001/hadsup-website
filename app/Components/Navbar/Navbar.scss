@@ -8,6 +8,7 @@
   z-index: 1000;
   background: $lightPink;
   padding: 0px 4rem;
+
   @media screen and (max-width:600px) {
     padding: 0px 1rem;
   }
@@ -39,6 +40,7 @@
 
       .person-container {
         position: relative;
+
         @media screen and (max-width: 750px) {
           display: none;
         }
@@ -103,15 +105,18 @@
 
       .hamburger-menu {
         display: none;
+
         @media screen and (max-width:750px) {
           display: block;
         }
+
         .menu-icon {
           font-size: 26px;
           position: absolute;
           top: 28px;
           right: 18px;
           cursor: pointer;
+
           @media screen and (max-width:600px) {
             position: unset;
           }
@@ -128,7 +133,7 @@
         @include flex;
         flex-direction: column;
         gap: 14px;
-        padding:28px 20px ;
+        padding: 28px 20px;
         font-size: 14px;
         font-weight: 600;
 

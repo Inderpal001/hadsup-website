@@ -6,12 +6,14 @@
     padding: 90px 15px;
     margin: auto;
     @include flex-x-center;
+
     @media screen and (max-width:1050px) {
         flex-direction: column;
         align-items: normal;
         width: 80%;
         gap: 30px;
     }
+
     @media screen and (max-width:600px) {
         width: 100%;
         padding: 40px 15px;
@@ -29,21 +31,24 @@
                 color: #2a3845;
                 margin-bottom: 20px;
                 font-family: "Gilroy", sans-serif;
+
                 @media screen and (max-width:1200px) {
                     font-size: 34px;
                 }
+
                 @media screen and (max-width:768px) {
                     font-size: 25px;
                 }
             }
-    
+
             .left-budget-para {
                 font-size: 20px;
                 line-height: 35px;
                 color: #84929f;
+
                 @media screen and (max-width:768px) {
-                  font-size: 14px;
-                  line-height: 23px;
+                    font-size: 14px;
+                    line-height: 23px;
                 }
             }
         }
@@ -54,6 +59,7 @@
 
         .right-budget-calc-content {
             max-width: 600px;
+
             @media screen and (max-width:1050px) {
                 max-width: none;
             }
@@ -64,13 +70,14 @@
                 box-shadow: -9px 16px 27px rgba(130, 52, 235, 0.04);
                 border-radius: 12px;
                 padding: 37px 30px;
+
                 @media screen and (max-width:768px) {
                     padding: 20px;
                 }
-    
+
                 .budget-calc-btns {
                     @include flex-x-center;
-    
+
                     .budget-btns {
                         flex: 1;
                         padding: 15px;
@@ -82,54 +89,58 @@
                         background: transparent;
                         overflow: hidden;
                         color: #515457;
+
                         @media screen and (max-width:768px) {
                             font-size: 14px;
                         }
                     }
-    
+
                     .active-budget-btn {
                         color: #fff;
                         background: linear-gradient(93.81deg, #f46868 -19.72%, #9d2ae0 -19.71%, #6241f9 120.2%);
                     }
-    
+
                     .left-budget-btn {
                         border-top-left-radius: 7px;
                         border-bottom-left-radius: 7px;
                     }
-    
+
                     .right-budget-btn {
                         border-top-right-radius: 7px;
                         border-bottom-right-radius: 7px;
                     }
                 }
-    
+
                 .budget-calc-input-div {
                     @include flex-x-center;
                     justify-content: space-between;
                     margin-top: 40px;
+
                     @media screen and (max-width:768px) {
-                       flex-direction: column;
-                       gap: 15px;
-                       align-items:normal;
+                        flex-direction: column;
+                        gap: 15px;
+                        align-items: normal;
                     }
-    
+
                     .budget-left-input-box {
                         width: 50%;
+
                         @media screen and (max-width:768px) {
                             width: 100%;
                         }
-        
+
                         .budget-left-input-area {
                             @include flex-x-center;
-        
+
                             .pound-symbol {
                                 font-size: 40px;
                                 font-weight: 600;
+
                                 @media screen and (max-width:768px) {
                                     font-size: 22px;
                                 }
                             }
-        
+
                             .budget-left-input {
                                 border: none;
                                 outline: none;
@@ -137,37 +148,41 @@
                                 font-weight: 600;
                                 width: 100%;
                                 overflow: hidden;
+
                                 @media screen and (max-width:768px) {
                                     font-size: 22px;
                                 }
                             }
                         }
                     }
-    
+
                     .budget-input-heading {
                         font-weight: 600;
                         font-size: 15px;
                         color: #2a3845;
                         margin-bottom: 15px;
+
                         @media screen and (max-width:768px) {
                             font-size: 13px;
                             line-height: 16px;
                         }
                     }
-    
+
                     .budget-right-input-box {
-                        width: 50%;  
+                        width: 50%;
                         text-align: right;
+
                         @media screen and (max-width:768px) {
-                           text-align: unset;
-                           width: 100%;
+                            text-align: unset;
+                            width: 100%;
                         }
-    
+
                         .right-output {
                             font-size: 40px;
                             font-weight: 600;
                             color: #6d3df4;
                             overflow: hidden;
+
                             @media screen and (max-width:768px) {
                                 font-size: 22px;
                             }

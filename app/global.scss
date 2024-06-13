@@ -3,11 +3,11 @@ $lightGreyColor : #84929f;
 $orangeColor : #f46872;
 $darkPink : #FF63AE;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  };
+}
 
 @mixin flex {
     display: flex;

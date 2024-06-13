@@ -3,10 +3,19 @@
 .card {
   max-width: 335px;
 
+  @media screen and (max-width:360px) {
+    max-width: 300px;
+  }
+
   .card-img {
     width: 335px;
     height: 370px;
     object-fit: cover;
+
+    @media screen and (max-width:360px) {
+      width: 290px;
+      height: 340px;
+    }
   }
 
   .card-heading {
@@ -15,13 +24,15 @@
     font-size: 28px;
     line-height: 36px;
     color: #2a3845;
-    font-family: "Gilroy",sans-serif;
+    font-family: "Gilroy", sans-serif;
+
     @media screen and (max-width:1150px) {
       font-size: 24px;
     }
+
     @media screen and (max-width:767px) {
       font-size: 20px;
-        line-height: 27px;
+      line-height: 27px;
     }
   }
 
@@ -31,6 +42,7 @@
     font-size: 17px;
     line-height: 34px;
     color: #84929f;
+
     @media screen and (max-width:767px) {
       font-size: 14px;
       line-height: 26px;

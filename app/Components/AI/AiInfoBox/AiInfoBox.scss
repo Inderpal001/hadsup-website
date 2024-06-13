@@ -7,9 +7,11 @@
     border-radius: 8px;
     max-width: 240px;
     z-index: 20;
-    @media screen and (max-width:767px){
+
+    @media screen and (max-width:767px) {
         max-width: 180px;
     }
+
     @media screen and (max-width:600px) {
         max-width: 140px;
     }
@@ -21,6 +23,7 @@
         padding: 12px;
         margin-right: 10px;
         color: #fff;
+
         @media screen and (max-width:600px) {
             padding: 6px;
         }
@@ -29,7 +32,8 @@
     .info-box-para {
         font-size: 14px;
         font-weight: 700;
-        @media screen and (max-width:767px){
+
+        @media screen and (max-width:767px) {
             font-size: 9px;
             font-weight: 500;
         }
