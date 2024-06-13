@@ -1,34 +1,24 @@
 @import "../../global";
 
-.calendar-input {
-    width: 100%;
-    background: #fff;
-    border: none;
-    outline: none;
-    height: 52px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.base-Input-input {
+  width: 100%;
+  padding: 17px 13px;
+  font-size: 16px;
+  border: 0.5px solid;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  @media screen and (max-width: 950px) {
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
     color: $lightGreyColor;
-
-    @media screen and (max-width: 950px) {
-        border-radius: 8px;
-      }
-
-      @media screen and (max-width: 600px) {
-        font-size: 14px;
-      }
-
-      &::placeholder {
-        font-weight: 500;
-        color: $lightGreyColor;
-      }
-}
-
-.MuiOutlinedInput-notchedOutline {
-    border: none;
-    outline: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
+  }
 }
